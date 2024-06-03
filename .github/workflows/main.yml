@@ -1,0 +1,17 @@
+name: Deploy to Heroku
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: akhileshns/heroku-deploy@v3.13.15 # This is the action
+        with:
+          heroku_api_key: HRKU-b9b0141e-4a73-483b-961c-e2021956e207
+          heroku_app_name: "dpsolano-rest-1610"
+          heroku_email: "j.atiencia@yahoo.com"    
