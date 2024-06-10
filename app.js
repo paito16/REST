@@ -30,3 +30,4 @@ function displayCharacter(character) {
         document.getElementById('result').innerText = 'Pokemon not found';
     }
 }
+
